@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root { --brand: #006d6d; }
+
+body { @apply bg-gray-50 text-gray-900 font-sans; }
+
+header.appbar {
+  @apply sticky top-0 z-40 h-14 flex items-center px-6
+         bg-gradient-to-r from-brand to-teal-700 text-white shadow-lg;
+}
+
+.btn-primary {
+  @apply inline-flex items-center gap-2 rounded-md bg-brand px-5 py-2
+         font-medium text-white transition hover:bg-teal-800;
+}
