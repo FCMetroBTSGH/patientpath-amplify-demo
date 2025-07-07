@@ -1,6 +1,6 @@
-import './globals.css';
+import '../globals.css';
 import { ReactNode } from 'react';
-import { ToastProvider } from '@/components/ToastProvider';
+import { ToastProvider } from '../components/ToastProvider';
 
 export const metadata = {
   title: 'PatientPath',
