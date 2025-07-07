@@ -13,10 +13,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <body className="antialiased min-h-screen flex flex-col">
         <header className="appbar">
-          <Link href="/" className="font-semibold tracking-wide">PatientPath Demo</Link>
+          <Link href="/" className="font-semibold tracking-wide">
+            PatientPath Demo
+          </Link>
         </header>
-        <main className="flex-1 container mx-auto p-6">{children}</main>
-        <ToastProvider />
+
+        <ToastProvider>
+          <main className="flex-1 container mx-auto p-6">{children}</main>
+        </ToastProvider>
       </body>
     </html>
   );
